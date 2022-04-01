@@ -12,3 +12,32 @@
     <!-- local css link  -->
     <link rel="stylesheet" href="./Assets/style.css" />
 </head>
+
+<body>
+    <!-- header with the title and no links  -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark text-white h1 justify-content-center mb-0 pb-4">
+            <span> Weather Dashboard </span>
+        </nav>
+    </header>
+
+    <main class="container col-12">
+        <div class="row">
+            <!-- search input and search history column -->
+            <section class="col-12 col-sm-5 col-md-3 pt-2 backgroundColor">
+                <h5>Search for a City:</h5>
+                <!-- this form is used to get the user input -->
+                <form id="city-form" class="col-12 form-inline pl-0 pb-3">
+                    <input type="text" id="city-input" class="col-8 form-control">
+                    <!-- this button will trigger AJAX call -->
+                    <button id="find-city" type="submit" class="btn btn-primary searchBtn">
+                        <i class="fas fa-search"></i></button>
+                </form>
+                <!-- search history buttons. will also trigger AJAX call -->
+                <ul id="search-history" class="list-group"></ul>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

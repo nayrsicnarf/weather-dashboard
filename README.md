@@ -12,23 +12,27 @@
 
 ## Description
 
-
+The goal for this project was to build a weather dashboard using the [OpenWeather API](https://openweathermap.org/api). The user can input a city and submit a search for the current day's weatheras well as the 5-day forecast for that particular city. The user's search history is kept in a list and also displayed once a search is done. The user may click on a city in the search history list to display that city's weather data again. Each search is stored into local storage which allows the city to remain in the history if the page is reloaded.
 
 ## GitHub Repository and Page
 
-- [GitHub Repository]()
+- [GitHub Repository](https://github.com/nayrsicnarf/weather-dashboard.git)
 
-- [GitHub Page]()
+- [GitHub Page](https://nayrsicnarf.github.io/weather-dashboard/)
 
 ## Technologies
 
 - [HTML](https://www.w3schools.com/html/default.asp)
 - [CSS](https://www.w3schools.com/css/default.asp)
 - [JavaScript](https://www.w3schools.com/js/)
+- [OpenWeather API](https://openweathermap.org/api)
+- [Bootstrap](https://getbootstrap.com/)
+- [jQuery](https://jquery.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 ## Installation
 
-To view this webpage on a local machine, pull the code from [GitHub]() using Terminal (Mac) or Git (Windows) and use the following (or similar) programs:
+To view this webpage on a local machine, pull the code from [GitHub](https://github.com/nayrsicnarf/weather-dashboard.git) using Terminal (Mac) or Git (Windows) and use the following (or similar) programs:
 
 - Operating System: macOS Monterey Version 21.1
 - Visual Studio Code: Version 1.64.2
@@ -37,11 +41,14 @@ To view this webpage on a local machine, pull the code from [GitHub]() using Ter
 
 ## Usage
 
-To view the completed project, visit my [GitHub Page]() or refer to the [Installation](#installation) section of this README.
+To view the completed project, visit my [GitHub Page](https://nayrsicnarf.github.io/weather-dashboard/) or refer to the [Installation](#installation) section of this README.
 
 ## Screenshot
 
-![Work Day Scheduler]()
+![Weather Screenshot - Los Angeles](/Assets/Images/weather-dash-la.png)
+![Weather Screenshot - Las Vegas](/Assets/Images/weather-dash-lv.png)
+![Weather Screenshot - Anaheim](/Assets/Images/weather-dash-ana.png)
+![Weather Screenshot - Kona](/Assets/Images/weather-dash-kona.png)
 
 ## Credits
 

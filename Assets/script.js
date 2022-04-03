@@ -14,7 +14,6 @@ $("#search-history").on("click", function (event) {
 
 // this function is called either by the click on the search button, the clicks on the search history list, or when the page is refreshed and there is something in local storage
 function createWeatherData(event) {
-    console.log(event.target)
     // get userInputCity by checking what invoked this function
     // page refreshed, search button click, search history list click, else return
     if (localStorage.length !== 0 && !$("#city-input").val() && !clickBool) {
@@ -137,7 +136,17 @@ function createWeatherData(event) {
 // this function determines the background color depending on the uv index
 function createUVIndexColor(x) {
     //  if statements determine the background color for the uv index depending on the severity (low: 1-2, moderate: 3-5, high: 6-7, very high: 8-10, extreme: 11+)
-
+    if (x >= 1.00 && x <= 2.99) {
+        $("#uvIndexBG").attr("style", "background-color:rgb(67, 185, 30);");
+    } else if (x >= 3.00 && x <= 5.99) {
+        $("#uvIndexBG").attr("style", "background-color:rgb(252, 199, 33);");
+    } else if (x >= 6.00 && x <= 7.99) {
+        $("#uvIndexBG").attr("style", "background-color:rgb(251, 116, 27);");
+    } else if (x >= 8.00 && x <= 10.99) {
+        $("#uvIndexBG").attr("style", "background-color:rgb(248, 17, 22);");
+    } else {
+        $("#uvIndexBG").attr("style", "background-color:rgb(134, 111, 255);");
+    }
 }
 
 // create search history list from local storage

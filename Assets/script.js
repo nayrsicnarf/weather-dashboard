@@ -58,12 +58,10 @@ function createWeatherData(event) {
     let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + userInputCity + "&appid=" +
         APIKey;
     // AJAX call for current weather data
-    console.log(queryURL);
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        console.log(response);
         // get current date. the response returns the date and time in unix. these next couple lines of code convert it to a standard format
         let currentDateUnix = response.dt;
         let currentDateMilliseconds = currentDateUnix * 1000;
@@ -99,7 +97,6 @@ function createWeatherData(event) {
             url: forecastQueryURL,
             method: "GET"
         }).then(function (responseForecast) {
-            console.log("This is line 103", responseForecast);
             // get the uv index
             $(".uv-index").text(responseForecast.daily[0].uvi);
             // call createUVIndexColor function to determine background color depending on uv index 
@@ -181,6 +178,7 @@ if (localStorage.length !== 0) {
     createSearchHistory();
     createWeatherData();
 }
+
 // check for ajax request errors. if error, alert the user and remove last searched item from local storage because it must be invalid
 $(document).ajaxError(function () {
     alert("The city you've searched for is not valid or not in the database!");

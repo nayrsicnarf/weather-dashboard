@@ -1,0 +1,31 @@
+/* sets the width and height of the weather icons */
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #1e1eff, #020242);
+}
+/* styles the search button */
+.searchBtn {
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(143, 196, 253);
+    border-radius: 15%;
+}
+
+/* background color for the search input and search history column */
+.backgroundColor {
+    background-color: rgb(248, 249, 250);
+    color: rgb(172, 171, 171)
+}
+
+/* styles the forecast cards to display inline, sets height, and sets text spacing */
+.cardStyle {
+    max-width: 10rem;
+    display: inline-block;
+    line-height: 36px;
+    background-image: linear-gradient(to bottom right, #55a9f8, #32324d);
+}
